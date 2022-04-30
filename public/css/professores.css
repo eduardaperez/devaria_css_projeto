@@ -1,0 +1,25 @@
+/* estilos presentes apenas no professores */
+main {
+    text-align: center;
+}
+
+.content-container {
+    padding: 20px;
+}
+
+.content-container > div img {
+    width: 90%;
+    border-radius: 10px;
+    border: 10px double;
+}
+
+.content-container h2.title {
+    font-size: 1.5em;
+
+}
+
+@media screen and (min-width: 992px) {
+    .content-container article p {
+        margin: 0 auto 10px;
+    }
+}

@@ -6,11 +6,13 @@
         <meta name="viewport" content="width=device-width, inicial-scale=1.0">
         <link rel="stylesheet" href="public/css/devaria.css">
         <link rel="stylesheet" href="public/css/header.css">
+        <link rel="stylesheet" href="public/css/footer.css">
+        <link rel="stylesheet" href="public/css/fale_conosco.css">
     </head>
     <body>
         <header>
             <a href="index.html" class="link_logo">
-                <img src="public/imagens/logo-devaria.svg" alt="">
+                <img src="public/imagens/logo-devaria.svg" alt="logo-devaria">
             </a>
             <nav>
                 <ul>
@@ -21,28 +23,30 @@
             </nav>
         </header>
         <main>
-            <h1>Fale Conosco</h1>
+            <h1 class="title text-center">Fale Conosco</h1>
             <section>
-                <h2>Para entrar em contato, preencha os campos abaixo e clique em "Enviar".</h2>
-                <form action="index.html">
-                    <p>
+                <h2 class="subtitle text-center">Para entrar em contato, preencha os campos abaixo e clique em "Enviar".</h2>
+                <form action="index.html" class="contact-form margin-horiz-20px">
+                    <div>
                         <label>Nome: </label><input type="text" name="nome" maxlength="50" />
-                    </p>
-                    <p>
+                    </div>
+                    <div>
                         <label>E-mail: </label><input type="text" name="email" maxlength="50" />
-                    </p>
-                    <p>
+                    </div>
+                    <div>
                         <label>Quero falar sobre: </label>
-                        <input type="radio" name="t_cometario" /><label>Dúvidas</label>
-                        <input type="radio" name="t_cometario" /><label>Reclamações</label>
-                        <input type="radio" name="t_cometario" /><label>Elogios</label>
-                        <input type="radio" name="t_cometario" /><label>Outros</label>
-                    </p>
-                    <p>
+                        <input type="radio" name="t_cometario" /><span>Dúvidas</span>
+                        <input type="radio" name="t_cometario" /><span>Reclamações</span>
+                    </div>
+                    <div>
+                        <input type="radio" name="t_cometario" /><span>Elogios</span>
+                        <input type="radio" name="t_cometario" /><span>Outros</span>
+                    </div>
+                    <div>
                         <label>Comentário: </label>
                         <textarea name="comentario" rows="4" cols="50"></textarea>
-                    </p>
-                    <p>
+                    </div>
+                    <div>
                         <label>Aonde você conheceu a Devaria?</label>
                         <select name="conheceu">
                             <option selected>Youtube</option>
@@ -50,15 +54,15 @@
                             <option>Instagram</option>
                             <option>Outro</option>
                         </select>
-                    </p>
-                    <p>
+                    </div>
+                    <div>
                         <input type="checkbox" name="aceite" value="Aceito">
-                        <label>Aceito receber as novidades da Devaria no meu e-mail.</label>
-                    </p>
-                    <p>
+                        <span>Aceito receber as novidades da Devaria no meu e-mail.</span>
+                    </div>
+                    <div>
                         <input type="submit" name="enviar" value="Enviar">
                         <input type="reset" name="limpar" value="Limpar">
-                    </p>
+                    </div>
                 </form>
             </section>
         </main>
